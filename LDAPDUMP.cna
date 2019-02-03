@@ -1,0 +1,32 @@
+popup beacon_bottom {
+
+	menu "LDAP-DUMP" {		
+		item "powershell" {	
+             bpowershell_import($1, script_resource("powershell/ldap_dump.ps1"));
+	         bpowershell($1, "dump_all_ldap");			
+			}
+			
+
+		item ".NET x86 V2" {
+			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX86.NET2.exe"));
+			}
+		
+		
+		item ".NET x64 V2" {
+			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX64.NET2.exe"));		
+			}
+		
+		
+		item ".NET x86 V4" {
+			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX86.NET4.exe"));	
+			}
+		
+		
+		item ".NET x64 V4" {
+			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX64.NET4.exe"));	
+			}
+		
+	}
+}
+
+
