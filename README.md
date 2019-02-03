@@ -13,6 +13,7 @@ This will dump all users on the default domain via execute-assembly:
 This will dump all users on the default domain via powershell:
 
 ```beacon> powershell-import ldap_dump.ps1```
+
 ```beacon> powershell dump_all_ldap```
 
 # Results
