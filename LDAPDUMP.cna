@@ -12,18 +12,8 @@ popup beacon_bottom {
 			}
 		
 		
-		item ".NET x64 V2" {
-			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX64.NET2.exe"));		
-			}
-		
-		
 		item ".NET x86 V4" {
 			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX86.NET4.exe"));	
-			}
-		
-		
-		item ".NET x64 V4" {
-			bexecute_assembly($1, script_resource("dotnet_binaries/ldap_dumpX64.NET4.exe"));	
 			}
 		
 	}

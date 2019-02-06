@@ -17,7 +17,8 @@ foreach ($i in $colResults)
 	  $propertyNames = $objComputer.Properties.PropertyNames
 	  foreach ($name in $propertyNames) {
 	  $line = $name + " : " + $objComputer.Properties.Item($name)[0]
-	  $line | out-file -Append ldap_dump.txt
+	  $string =  "$username : $line" 
+	  $string | out-file -Append ldap_dump.txt
 	  }
 }
 }
